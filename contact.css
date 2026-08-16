@@ -1,0 +1,41 @@
+*{
+ margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+
+
+
+body{
+    display: grid;
+    border:  2 solid red;
+    height: 100%;
+    width: 100%;
+    grid-template-rows: 3fr 15fr 3fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+     "nav"
+    "main"
+    "footer";
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  grid-area: nav;
+}
+
+main {
+  background-color: rgb(24, 207, 39);
+    grid-area: main;
+
+}
+
+footer {
+  background-color: purple;
+    grid-area: footer;
+
+}
